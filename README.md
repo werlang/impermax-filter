@@ -1,6 +1,6 @@
 # impermax-filter
 
-This repo provide a simple filter function for those using the impermax dapp.
+This repo provide a simple filter function for those using the [Impermax](https://www.impermax.finance/) dapp.
 
 ## Motivation
 
