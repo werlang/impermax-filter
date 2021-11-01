@@ -1,4 +1,4 @@
-const impermaxFilter = (tokenList, mode) => {
+const impermaxFilter = (tokenList, order) => {
     const rows = [];
     document.querySelectorAll('.pairs-table-row').forEach(e => rows.push(e));
     
@@ -21,9 +21,9 @@ const impermaxFilter = (tokenList, mode) => {
     }} )).reduce((p,c) => [...p, ...c], []).filter(e => tokenList.includes(e.token));
     
     return info.sort((a,b) => {
-        if (mode == 'borrow'){
-            return a[mode] - b[mode];
+        if (order == 'borrow'){
+            return a[order] - b[order];
         }
-        return b[mode] - a[mode];
+        return b[order] - a[order];
     });
 };
