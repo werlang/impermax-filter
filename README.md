@@ -194,4 +194,5 @@ The response will be an Array containing the ordered and filtered list of market
 ]
 ```
 
-Tips are appreciated: ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
+
+## Tips are appreciated: ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
