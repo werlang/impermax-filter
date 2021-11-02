@@ -1,7 +1,13 @@
 const impermaxFilter = (tokenList, order, rearrangeDOM=false) => {
     // get all rows into an array
-    const rows = [];
-    document.querySelectorAll('.pairs-table-row').forEach(e => rows.push(e));
+    let rows = [];
+    if (window.originalRows){
+        rows = window.originalRows;
+    }
+    else {
+        document.querySelectorAll('.pairs-table-row').forEach(e => rows.push(e));
+        window.originalRows = rows;
+    }
     
     // extract from rows information about supply, borrow and farms
     const supply = rows.map(e => e.querySelectorAll('.col')[2]).filter(e => e).map(e => [e.querySelectorAll('div')[0].innerHTML, e.querySelectorAll('div')[1].innerHTML].map(e => parseFloat(e.split('%')[0]) / 100 ));
