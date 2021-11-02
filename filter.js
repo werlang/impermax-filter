@@ -1,4 +1,4 @@
-const impermaxFilter = (tokenList, order) => {
+const impermaxFilter = (tokenList, order, rearrangeDOM=false) => {
     const rows = [];
     document.querySelectorAll('.pairs-table-row').forEach(e => rows.push(e));
     
@@ -10,15 +10,23 @@ const impermaxFilter = (tokenList, order) => {
     const amm = rows.map(e => e.querySelector('.col-7 .amm-label').innerHTML);
     const href = rows.map(e => e.href);
     
-    const info = pairs.map((e,i) => e.split('/').map((e,j) => {return { 
+    let info = pairs.map((e,i) => e.split('/').map((e,j) => { return { 
         token: e, 
         pair: pairs[i], 
         source: amm[i], 
         supply: supply[i][j], 
         borrow: borrow[i][j], 
         farm: farm[i], 
-        href: href[i]
+        href: href[i],
+        row: rows[i],
     }} )).reduce((p,c) => [...p, ...c], []).filter(e => tokenList.includes(e.token));
+    info = info.sort((a,b) => order == 'borrow' ? a[order] - b[order] : b[order] - a[order]);
     
-    return info.sort((a,b) => order == 'borrow' ? a[order] - b[order] : b[order] - a[order]);
+    if (rearrangeDOM){
+        document.querySelectorAll('.pairs-table-row').forEach(e => e.remove());
+        const table = document.querySelector('.pairs-table');
+        info.forEach(e => table.insertAdjacentElement('beforeend', e.row));
+    }
+    
+    return info;
 };
