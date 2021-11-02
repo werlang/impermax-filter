@@ -98,4 +98,7 @@ If you set ```rearrangeDOM``` to true, the page itself will be changed. Check sa
 ```
 
 
-## Tips are appreciated (ETH, MATIC, BNB, FTM): ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
+## Tips are appreciated (Ethereum, BSC, Polygon, Fantom): ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
+
+![image](https://user-images.githubusercontent.com/19828711/139945432-f6b07860-c986-4221-a291-10370f24ea5a.png)
+
