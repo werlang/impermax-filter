@@ -54,7 +54,7 @@ The response will be an Array containing the ordered and filtered list of market
 ]
 ```
 
-If you set ```rearrangeDOM``` to true, the page itself will be changed. Check sample below, filtered by stablecoins only (USDC, USDT, DAI, MAI) and ordered by Sypply APR.
+If you set ```rearrangeDOM``` to true, the page itself will be changed. Check sample below, filtered by stablecoins only (USDC, USDT, DAI, MAI) and ordered by Supply APR.
 
 ![Rearrange sample](https://user-images.githubusercontent.com/19828711/139942443-59d394ef-ba92-4cc1-85fd-cfb50aadaea9.png)
 
