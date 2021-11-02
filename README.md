@@ -12,7 +12,7 @@ There is no installation for this. You need to use your browser's Dev Tools cons
 
 * Open Impermax dapp.
 * Once on markets page, after all markets are loaded, open Dev Tools console (F12).
-* Paste impermaxFilter function from filter.js into the console.
+* Paste impermaxFilter function from ```filter.js``` or ```filter.min.js``` into the console.
 * Call the function using the ```tokenList``` and ```order``` arguments.
 * Done.
 
