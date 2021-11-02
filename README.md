@@ -98,4 +98,4 @@ If you set ```rearrangeDOM``` to true, the page itself will be changed. Check sa
 ```
 
 
-## Tips are appreciated: ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
+## Tips are appreciated (ETH, MATIC, BNB, FTM): ```0xA6E126a5bA7aE209A92b16fcf464E502f27fb658```
