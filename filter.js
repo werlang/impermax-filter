@@ -20,10 +20,5 @@ const impermaxFilter = (tokenList, order) => {
         href: href[i]
     }} )).reduce((p,c) => [...p, ...c], []).filter(e => tokenList.includes(e.token));
     
-    return info.sort((a,b) => {
-        if (order == 'borrow'){
-            return a[order] - b[order];
-        }
-        return b[order] - a[order];
-    });
+    return info.sort((a,b) => order == 'borrow' ? a[order] - b[order] : b[order] - a[order]);
 };
